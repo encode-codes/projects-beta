@@ -1095,7 +1095,7 @@ function utility.rgba(r, g, b, alpha)
 end
 
 local themes = {
-    External = {
+    Default = {
         ["Accent"] = Color3.fromRGB(0, 255, 195),
         ["Window Background"] = Color3.fromRGB(30, 30, 30),
         ["Window Border"] = Color3.fromRGB(45, 45, 45),
@@ -1371,7 +1371,7 @@ function library:SetTheme(theme)
 end
 
 function library:GetThemes()
-    local themes = {"External", "KillBot"}
+    local themes = {"Default", "KillBot"}
 
     local folderpath = string.format("%s//themes", self.folder)
 
