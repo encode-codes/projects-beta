@@ -1,0 +1,4 @@
+if game.Players.LocalPlayer.UserId == 0 then
+game.Players.LocalPlayer:Kick("unauthorized, contact admin")
+rconsoleprint("Blacklisted")
+end
