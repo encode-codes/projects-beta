@@ -1,1 +1,1 @@
-# projects-beta
+# projects-beta, (paid)
