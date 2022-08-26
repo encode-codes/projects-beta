@@ -43,7 +43,7 @@ local theme = {
     textborder = Color3.fromRGB(0, 0, 0),
     cursoroutline = Color3.fromRGB(10, 10, 10),
     font = 2,
-    textsize = 13
+    textsize = 17
 }
 
 -- // Utility Functions
@@ -386,8 +386,8 @@ do
     --
     function library:New(info)
 		local info = info or {}
-        local name = info.name or info.Name or "Oneshot"
-        local title = info.title or info.Title or "Oneshot"
+        local name = info.name or info.Name or "medusa.hvh"
+        local title = info.title or info.Title or "medusa.hvh"
         local size = info.size or info.Size or Vector2.new(504,604)
         local accent = info.accent or info.Accent or info.color or info.Color or theme.accent
         --
