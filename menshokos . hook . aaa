@@ -680,7 +680,7 @@ do
         end
         --
         function window:Watermark(info)
-            window.watermark = {visible = false}
+            window.watermark = {visible = true}
             --
             local info = info or {}
             --
@@ -947,7 +947,7 @@ do
         end
         --
         function window:KeybindsList(info)
-            window.keybindslist = {visible =  false, keybinds = {}}
+            window.keybindslist = {visible =  true, keybinds = {}}
             --
             local info = info or {}
             --
