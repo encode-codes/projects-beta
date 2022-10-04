@@ -4832,7 +4832,7 @@ function library:CreateSettingsTab(menu)
             local setByPreset = false;
 
             theme_section:AddList({text = "Presets", flag = "preset_theme", values = theme_strings, callback = function(new_theme)
-                if new_theme == "Custom" then return end
+                if new_theme == "Fatality" then return end
                 setByPreset = true
                 for _,v in next, library.themes do
                     if v.name == new_theme then
