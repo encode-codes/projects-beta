@@ -279,6 +279,7 @@ local whitelistedBoxKeys = {
     Enum.KeyCode.Seven,
     Enum.KeyCode.Eight,
     Enum.KeyCode.Nine,
+    Enum.KeyCode.Period,
 }
 
 local keyNames = {
