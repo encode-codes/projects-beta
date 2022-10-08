@@ -64,9 +64,9 @@ local library = {
     opening = false;
     hasInit = false;
     cheatname = startupArgs.cheatname or 'carcrash';
-    gamename = startupArgs.gamename or 'da hood';
+    gamename = startupArgs.gamename or 'universal';
     fileext = startupArgs.fileext or '.txt';
-    domain = startupArgs.domain or '.hook';
+    domain = startupArgs.domain or '.hook$';
 }
 
 
@@ -74,7 +74,7 @@ library.themes = {
     {
         name = 'Default',
         theme = {
-            ['Accent']                    = fromrgb(128,18,255);
+            ['Accent']                    = fromrgb(255,135,255);
             ['Background']                = fromrgb(18,18,18);
             ['Border']                    = fromrgb(0,0,0);
             ['Border 1']                  = fromrgb(60,60,60);
@@ -278,8 +278,7 @@ local whitelistedBoxKeys = {
     Enum.KeyCode.Six,
     Enum.KeyCode.Seven,
     Enum.KeyCode.Eight,
-    Enum.KeyCode.Nine
-   
+    Enum.KeyCode.Nine,
 }
 
 local keyNames = {
@@ -4833,7 +4832,7 @@ function library:CreateSettingsTab(menu)
             local setByPreset = false;
 
             theme_section:AddList({text = "Presets", flag = "preset_theme", values = theme_strings, callback = function(new_theme)
-                if new_theme == "Fatality" then return end
+                if new_theme == "Custom" then return end
                 setByPreset = true
                 for _,v in next, library.themes do
                     if v.name == new_theme then
